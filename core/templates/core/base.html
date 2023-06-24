@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+         <title>{% block title %} other {% endblock title %} </title>
+         {% block core %}
+       {% endblock core %}              
+    </head>
+    <body>
+         {% include 'core/navbar.html' %}
+         {% include 'core/navbar.html' %}
+        {% block content %} {% endblock content %}
+        {% block content1 %} {% endblock content1 %}
+      
+    </body>
+</html>
